@@ -21,9 +21,7 @@
         </DefaultRolloverStrategy>
     </Appenders>
     <Loggers>
-        <Logger name="Hippodrome" level="debug" additivity="false">
-            <AppenderRef ref="LogToConsole"/>
-        </Logger>
+
         <Root level="info">
             <AppenderRef ref="RollingFile"/>
             <AppenderRef ref="LogToConsole"/>
