@@ -1,7 +1,6 @@
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
-import org.mockito.Mock;
 import org.mockito.MockedStatic;
 import org.mockito.Mockito;
 import java.util.stream.Stream;
@@ -18,9 +17,6 @@ class HorseTest {
     static Stream<String> argsProviderFactory() {
         return Stream.of("", " ", "    ");
     }
-
-    @Mock
-    Horse mockHorse;
 
     @Test
     @Order(1)
@@ -100,5 +96,4 @@ class HorseTest {
             assertEquals(distance+1, 4);
         }
     }
-
 }
